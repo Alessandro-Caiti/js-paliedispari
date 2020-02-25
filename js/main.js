@@ -31,11 +31,24 @@ console.log(palindromo(parola));
 //     console.log(input + " non è una parola palindroma");
 // }
 //
-// function palindrome(str) { // Inizio della funziona per il check del palindromo
-//   var strLower = str.toLowerCase(); // Trasformo tutto piccolo
-//   var isPalindrome = strLower.split('').reverse().join(''); // Ribalto tutto
-//   return (strLower === isPalindrome); // Check se il ribaltato è uguale all'originale
+// function palindrome(str) {
+//   var strLower = str.toLowerCase();
+//   var isPalindrome = strLower.split('').reverse().join('');
+//   return (strLower === isPalindrome);
 // }
+
+//  palindromo opzione 3
+
+var parola = prompt("Inserisci una parola");
+var parolaRibaltata = palindromo(parola);
+
+function palindromo(parola) {
+    var parolaReverse = "";
+    for (var i = parola.length - 1; i >= 0; i--) {
+        parolaReverse += parola[i];
+    }
+    return parolaReverse
+}
 
 
 // Pari o dispari
