@@ -39,16 +39,24 @@ console.log(palindromo(parola));
 
 //  palindromo opzione 3
 
-var parola = prompt("Inserisci una parola");
-var parolaRibaltata = palindromo(parola);
-
-function palindromo(parola) {
-    var parolaReverse = "";
-    for (var i = parola.length - 1; i >= 0; i--) {
-        parolaReverse += parola[i];
-    }
-    return parolaReverse
-}
+// var parola = prompt("Inserisci una parola");
+// var parolaRibaltata = reverse(parola);
+//
+//
+// if (parola == parolaRibaltata) {
+//     console.log("La parola è palindroma");
+// } else {
+//     console.log("La parola non è palindroma");
+// }
+//
+//
+// function reverse(parola) {
+//     var parolaReverse = "";
+//     for (var i = parola.length - 1; i >= 0; i--) {
+//         parolaReverse += parola[i];
+//     }
+//     return parolaReverse
+// }
 
 
 // Pari o dispari
